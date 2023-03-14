@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form-login div {
+  display: flex;
+  flex-direction: column;
+}
+.form-login div small {
+  display: none;
+}
+.form-login div.error label {
+  color: red;
+}
+.form-login div.error input {
+  border-color: red;
+}
+.form-login div.error small {
+  color: red;
+  display: block;
+}/*# sourceMappingURL=style.css.map */

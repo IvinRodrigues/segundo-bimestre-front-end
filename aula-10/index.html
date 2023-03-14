@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form class="form-login">
+
+        <h1>Login</h1>
+
+        <div>
+            <label for="userEmail">E-mail</label>
+            <input type="email" id="userEmail" required>
+            <small>Preencha o campo E-mail corretamente</small>
+        </div>
+
+        <div>
+            <label for="userPhone">Telefone</label>
+            <input type="text" id="userPhone" required minlength="9">
+            <small>Preencha o campo Telefone corretamente</small>
+        </div>
+
+        <div>
+            <label for="userPassword">Senha</label>
+            <input type="password" id="userPassword" required minlength="8">
+            <small>Preencha o campo Senha corretamente</small>
+        </div>
+
+        <button type="submit" id="loginButton" disabled>Prosseguir</button>
+
+    </form>
+    
+    <script src="./main.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.form-login {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    div {
+
+        display: flex;
+        flex-direction: column;
+
+        small {
+
+            display: none;
+
+        }
+
+        &.error {
+
+            label {
+
+                color: red;
+
+            }
+
+            input {
+
+                border-color: red;
+
+            }
+
+            small {
+
+                color: red;
+                display: block;
+
+            }
+
+        }
+
+    }
+
+}

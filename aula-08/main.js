@@ -1,14 +1,14 @@
-window.addEventListener('load', () => console.log('carregou'))
+const userEmailRef = document.querySelector('#userEmail') // Obtenção do input de email
+const userPasswordRef = document.querySelector('#userPassword') // Obtenção do input de senha
+const loginButtonRef = document.querySelector('#loginButton') // Obtenção do botão de submit do formulário
 
-const userEmailRef = document.querySelector('#userEmail')
-const userPasswordRef = document.querySelector('#userPassword')
-const loginButtonRef = document.querySelector('#loginButton')
-
+// Criação de um Objeto para armazenar os dados digitados pelo usuário
 var userData = {
     email: '',
     password: ''
 }
 
+// Função que ira validar a senha
 function validarSenha(senha) {
 
     userData.password = senha
@@ -16,7 +16,7 @@ function validarSenha(senha) {
 }
 
 
-
+// Função que ira validar o e-mail
 function validarEmail(email) {
 
     userData.email = email
@@ -25,9 +25,12 @@ function validarEmail(email) {
 
 
 
+// Função que irá "fazer o login"
 function login(event) {
 
     event.preventDefault()
+
+    console.log(userData)
 
 }
 
